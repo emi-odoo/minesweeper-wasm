@@ -1,0 +1,20 @@
+{
+  "name": "minesweeper-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack-cli",
+    "start:dev": "NODE_ENV=development webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "minesweeper-wasm": "file:../pkg"
+  },
+  "devDependencies": {
+    "css-loader": "^2.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.0",
+    "webpack-dev-server": "^3.11.3"
+  }
+}
