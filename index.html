@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Minesweeper</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/crab_1f980.png" type="image/x-icon">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+  <script src="bundle.js"></script>
+  <style>
+
+    html {
+        background-color: black;
+    }
+
+    body, html {
+      font-family: 'Noto Serif SC', serif;
+      color: black;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      padding: 1em;
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    #header h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    #header p {
+      color: white;
+    }
+
+    td {
+      border: 1px solid black;
+      background-color: #999;
+      color: black;
+      font-size: 0.8em;
+      height: 2em;
+      width: 2em;
+      transition: 0.2s ease;
+      border-radius: 3px;
+      border: 1px solid white;
+    }
+
+    td:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    table {
+      font-family: 'courier new', monospace;
+      table-layout: fixed;
+      margin: 0 auto;
+      margin-top: 2em;
+      margin-bottom: 2em; 
+    }
+    button {
+      background-color: grey;
+      border: none;
+      color: black;
+      padding: 15px;
+      border-radius: 15px;
+      transition: 0.4s ease;
+    }
+    button:hover{
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+    }
+    button:active{
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+
+    div{
+      margin-top: 5%;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Add your site or application content here -->
+  <header id="header">
+    <h1>Minesweeper with WASM and Rust 🦀</h1>
+  </header>
+  <div id="app"></div>
+</body>
+</html>
